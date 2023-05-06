@@ -11,10 +11,10 @@ const addcardSchema = new Schema({
     student_phone_number: { type: String, required: true },
     parents_phone_number: { type: String, required: true },
     degree: { type: String, required: true },
-    department: { type: String, default: null },
-    section: { type: String, required: true },
-    session: { type: String, required: true },
-    group: { type: String, required: true },
+    department: { type: String, default: ''},
+    section: { type: String, default: ''},
+    session: { type: String, required: true},
+    group: { type: String, default: ''},
     picture: { type: String, required: true }
 })
 
